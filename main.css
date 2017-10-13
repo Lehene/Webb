@@ -5,11 +5,8 @@ body{
 	align-items: center;
 	background-color: #ffe6e6;
 	margin-top: 30px;
-	background-image: url("/users/hepr02/desktop/webbprojekt/oman_utsikt.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 500px;
-}
+	}
+
 
 h1 {
 	font-family: 'Oranienbaum', serif;
@@ -17,6 +14,23 @@ h1 {
 	letter-spacing: 2px;
 	margin-bottom: 0px;
 	font-weight: lighter;
+}
+
+h3 {
+	font-family: 'Oranienbaum', serif;
+	font-size: 15px;
+	letter-spacing: 2px;
+	margin-bottom: 0px;
+	font-weight: lighter;
+}
+img {
+	height: 20px;
+	width: 20px;
+}
+
+.links {
+	margin-top: 10px;
+
 }
 
 .InputSection {

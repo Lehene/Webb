@@ -8,11 +8,12 @@
 
 </head>
 <body>
-	<h1>Välkomna till Helenes hörna!</h1>
-	<img src="/users/hepr02/desktop/webbprojekt/pictures/tjejerkodar.png">
+	<h1>Välkommen till Helenes hörna!</h1>
+	<h3>Vad ska jag välja? Lägg in alla alternativ, lägg till ny rad vid behov och klicka sedan Kör!</h3>
+	
 	<div class="InputSection">
 		<div class="Inputs">
-			<input placeholder="Fyll i" type="text">
+			<input placeholder="" type="text">
 			</div>
 			<button class="add">Lägg till ny rad</button>
 
@@ -21,7 +22,11 @@
 <div class="resultSection">
 </div>
 	<button class="knapp">Kör!</button>
-	<div></div>
+	<div class="links">
+		<img src="/users/hepr02/desktop/webbprojekt/pictures/home.jpg">
+		<img src="/users/hepr02/desktop/webbprojekt/pictures/twitter.png">
+		<img src="/users/hepr02/desktop/webbprojekt/pictures/rocket.png">
+	</div>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script>
 //Funktion som gömmer div som vi har satt class=resultSection. Våår funktion lägger till ett input fält i div som har class Input. När någon sedan klickar på vår knapp som har klass add så körs vår funktion add_option
@@ -47,11 +52,12 @@
 		
 		}
 		$(".knapp").click(submit)
+	
 
 //Funktion som jag har döpt till change_color. Den hämtar elementet body och ändrar färg till gul. När man clickar på elementet h1 så ska funktionen change_color köras
 		$(function() {
 			var change_color = function() {
-				$("body").css("background-color", "yellow")
+				$("body").css("background-color", "lightblue")
 			}
 			$("h1").click(change_color)
 		})
