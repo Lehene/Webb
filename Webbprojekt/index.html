@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<meta charset="utf-8">
+	<title>Helenes Hörna</title>
+	<link rel="stylesheet" type="text/css" href="./main.css">
+	<link href="https://fonts.googleapis.com/css?family=Oranienbaum" rel="stylesheet">
+
+</head>
+<body>
+	<h1>Välkommen till Helenes hörna!</h1>
+	<h3>Vad ska jag välja? Lägg in alla alternativ, lägg till ny rad vid behov och klicka sedan Kör!</h3>
+	
+	<div class="InputSection">
+		<div class="Inputs">
+			<input placeholder="" type="text">
+			</div>
+			<button class="add">Lägg till ny rad</button>
+
+		
+</div>
+<div class="resultSection">
+</div>
+	<button class="knapp">Kör!</button>
+	<div class="links">
+		<img src="/users/hepr02/desktop/webbprojekt/pictures/home.jpg">
+		<img src="/users/hepr02/desktop/webbprojekt/pictures/twitter.png">
+		<img src="/users/hepr02/desktop/webbprojekt/pictures/rocket.png">
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script>
+//Funktion som gömmer div som vi har satt class=resultSection. Våår funktion lägger till ett input fält i div som har class Input. När någon sedan klickar på vår knapp som har klass add så körs vår funktion add_option
+		$(function () {
+			$(".resultSection").hide()
+			var add_option = function() {
+				$(".Inputs").append("<input></input>")
+				}
+				$(".add").click(add_option) 
+		})
+
+		//Lägg till en lista där vi sparar alla input
+		var options = []
+		var submit = function () {
+			$(".InputSection").hide()
+			$(".resultSection").css("display","flex")
+
+				$("input").each(function(){
+					options.push($(this).val())
+				})
+		var winner = options[Math.floor(Math.random()*options.length)]
+		$(".resultSection").text(winner)
+		
+		}
+		$(".knapp").click(submit)
+	
+
+//Funktion som jag har döpt till change_color. Den hämtar elementet body och ändrar färg till gul. När man clickar på elementet h1 så ska funktionen change_color köras
+		$(function() {
+			var change_color = function() {
+				$("body").css("background-color", "lightblue")
+			}
+			$("h1").click(change_color)
+		})
+	</script>
+</body>
+</html>

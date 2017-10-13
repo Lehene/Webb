@@ -1,0 +1,76 @@
+body{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffe6e6;
+	margin-top: 30px;
+	}
+
+
+h1 {
+	font-family: 'Oranienbaum', serif;
+	font-size: 35px;
+	letter-spacing: 2px;
+	margin-bottom: 0px;
+	font-weight: lighter;
+}
+
+h3 {
+	font-family: 'Oranienbaum', serif;
+	font-size: 15px;
+	letter-spacing: 2px;
+	margin-bottom: 0px;
+	font-weight: lighter;
+}
+img {
+	height: 20px;
+	width: 20px;
+}
+
+.links {
+	margin-top: 10px;
+
+}
+
+.InputSection {
+margin: 70px 0px 70px 0px;
+width: 450px;
+}
+
+.resultSection {
+height: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 50px;
+color: white;
+
+}
+
+.Inputs {
+width: inherit;
+display: flex;
+flex-direction: column;
+margin-top: 10px;
+}
+
+.go {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.knapp {
+	margin-top: 10px;
+	padding: 20px 20px;
+}
+input {
+margin-top: 10px;
+}
+button {
+	color: white;
+	background-color: #ff0066;
+	border-width: 6px;
+	border-color: white;
+
+}
