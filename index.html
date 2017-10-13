@@ -24,12 +24,36 @@
 	<div></div>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script>
+//Funktion som gömmer div som vi har satt class=resultSection. Våår funktion lägger till ett input fält i div som har class Input. När någon sedan klickar på vår knapp som har klass add så körs vår funktion add_option
 		$(function () {
 			$(".resultSection").hide()
 			var add_option = function() {
 				$(".Inputs").append("<input></input>")
 				}
 				$(".add").click(add_option) 
+		})
+
+		//Lägg till en lista där vi sparar alla input
+		var options = []
+		var submit = function () {
+			$(".InputSection").hide()
+			$(".resultSection").css("display","flex")
+
+				$("input").each(function(){
+					options.push($(this).val())
+				})
+		var winner = options[Math.floor(Math.random()*options.length)]
+		$(".resultSection").text(winner)
+		
+		}
+		$(".knapp").click(submit)
+
+//Funktion som jag har döpt till change_color. Den hämtar elementet body och ändrar färg till gul. När man clickar på elementet h1 så ska funktionen change_color köras
+		$(function() {
+			var change_color = function() {
+				$("body").css("background-color", "yellow")
+			}
+			$("h1").click(change_color)
 		})
 	</script>
 </body>

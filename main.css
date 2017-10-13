@@ -24,6 +24,16 @@ margin: 70px 0px 70px 0px;
 width: 450px;
 }
 
+.resultSection {
+height: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 50px;
+color: white;
+
+}
+
 .Inputs {
 width: inherit;
 display: flex;
